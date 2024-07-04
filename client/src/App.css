@@ -1,0 +1,476 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+  --bg-signin:rgb(13, 146, 118);
+  --cont-radius:20px;
+  --bg-yellow: #D6D46D;
+  --cont-padding:15px;
+  --ler-weight:600;
+  --search-nav:#F3ED9E;
+ --Cel-boxbg:#77A773;
+ --bank-bg: #78C6FE57;
+
+ 
+}
+
+
+body{
+  background-color: #C8DDE2;
+}
+
+.CEL-width{
+  margin: 0 125px;
+}
+
+
+
+.login-btn{
+  padding: 15px 50px;
+  background-color: #12189a;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 300;
+}
+.login-btn:hover{
+  color: #fff;
+  background-color: #02076c;
+}
+
+.Signin-bg {
+  position: relative; 
+  overflow: hidden; 
+  padding: 20px; 
+  
+  
+}
+
+/* Header ke background ko modify karne ke liye ::before pseudo-element ka use */
+.Signin-bg::before {
+  content: "";
+    position: absolute;
+    height: 2000px;
+    width: 2000px;
+    top: -10%;
+    right: 48%;
+    transform: translateY(-50%);
+    background-image: linear-gradient(-45deg, rgb(69, 71, 75) 0%, rgb(76, 61, 61) 100%);
+    z-index: -1;
+    transition: all 1.8s ease-in-out 0s;
+    border-radius: 50%; /* Ensure ki pseudo-element text ke peeche rahe */
+}
+
+
+.Sign-up-bg{
+  position: relative; 
+  overflow: hidden; 
+  padding: 20px;
+}
+
+.Sign-up-bg::before{
+  content: "";
+  position: absolute;
+  height: 2000px;
+  width: 2000px;
+  top: -10%;
+  /* right: 48%; */
+  transform: translate(100%, -50%);
+    right: 52%;
+  /* transform: translateY(-50%); */
+  background-image: linear-gradient(-45deg, rgb(69, 71, 75) 0%, rgb(76, 61, 61) 100%);
+  z-index: -1;
+  transition: all 1.8s ease-in-out 0s;
+  border-radius: 50%;
+}
+
+.bg-sign{
+  background-color: var(--bg-signin);
+  border-radius: 30%;
+}
+
+.fa-icon:hover{
+  border-color:rgb(135, 178, 203)
+}
+
+input:focus{
+  outline:none;
+}
+
+
+
+/* contractor page design */
+
+.Top-jobs{
+   background: #394E39;
+   color: white;
+   padding: var(--cont-padding);
+  border-radius: var(--cont-radius);
+}
+
+.elm-btn{
+  background-color: var(--search-nav);
+}
+.el-btn{
+  background-color: var(--search-nav);
+  padding: 8px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: var(--ler-weight);
+
+}
+.search-input{
+  background-color: var(--search-nav);
+  padding: 8px 5px 8px 13px;
+  border-radius: 20px;
+  
+}
+
+.want{
+  background: var(--bg-yellow);
+  padding: 5px 40px 5px 40px;
+border-radius: 5px;
+
+}
+
+.headnig-fac{
+  padding: 10px;
+  font-size: 10px;
+  font-weight: var(--ler-weight);
+}
+
+.filters{
+  background:var(--Cel-boxbg) ;
+  padding: 15px;
+  border-radius: var(--cont-radius)
+
+}
+
+.head{
+  font-weight: var(--ler-weight);
+  font-size: 18px;
+}
+
+.min-max{
+  font-weight: var(--ler-weight);
+  font-size: 12px;
+  background-color: white;
+  border-radius: 8%;
+  padding: 5px 8px 5px 8px;
+}
+
+.available{
+  background: #C0D8C0;
+  padding: var(--cont-padding);
+  border-radius: var(--cont-radius);
+}
+
+.bid-price{
+background-color: var(--bg-yellow);
+border-radius: var(--cont-radius);
+padding: 5px 10px 5px 10px;
+font-weight: var(--ler-weight);
+}
+
+.completed-jobs{
+  background-color:var(--search-nav);
+  border-radius: var(--cont-radius);
+  padding: var(--cont-padding);
+  ;
+
+}
+
+.contract-worth{
+  background: #9BA17B;
+  border-radius: var(--cont-radius);
+  padding: 5px 18px 5px 18px;
+
+}
+
+.review{
+  background:var(--Cel-boxbg) ;
+  padding: 20px 60px 20px 60px;
+  font-weight: var(--ler-weight);
+  border-radius: var(--cont-radius);
+
+}
+
+.revew-circle{
+  margin: 5px 60px;
+  /* border: 10px; */
+}
+
+
+/* laborer */
+
+.bank-image{
+  /* border: 2px solid black; */
+  border-radius: 50%;
+  width:100px;
+  /* object-fit: contain; */
+  height:100px
+}
+
+.bank-box{
+  background-color: var(--bank-bg);
+  padding: var(--cont-padding);
+  border-radius: var(--cont-radius);
+}
+
+.bank-list{
+background: #B7C2FF;
+border-radius: var(--cont-radius);
+padding: 8px 15px 8px 15px;
+font-weight: var(--ler-weight);
+text-align: center;
+}
+
+.bank-box1{
+  border-radius: var(--cont-radius);
+  background: #236A9D4F;
+padding:var(--cont-padding);
+}
+
+
+.dealer{
+  background: #0A2A59;
+  color: white;
+  font-weight: var(--ler-weight);
+  border-radius: var(--cont-radius);
+  padding: 8px;
+
+}
+
+
+.month{
+  background: #94FC9F;
+padding: 20px 20px 20px 20px;
+border-radius: 13px 13px 5px 1px;
+font-weight: var(--ler-weight);
+}
+
+
+.attendance{
+  /* padding: var(--cont-padding); */
+  background-color: white;
+  border-radius: var(--cont-radius);
+  font-weight: var(--ler-weight);
+
+}
+.day{
+  background: #0A2A59;
+  padding: var(--cont-padding);
+  color: white;
+  border-radius: var(--cont-radius);
+
+}
+
+.payment{
+  background: #FFE76A;
+  padding: 5px 30px 5px 30px;
+  border-radius:5px;
+
+}
+
+.done{
+  background: #50DA3A;
+
+  padding: 5px 20px 5px 20px;
+  border-radius:5px;
+  
+
+}
+
+.notdone{
+  background: #FC2929;
+  padding: 5px 20px 5px 20px;
+  border-radius:5px;
+
+}
+/* footer page */
+
+footer h1{
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+}
+footer h2{
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+}
+footer a{
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: #000;
+}
+footer a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+footer div{
+  text-align: center;
+  line-height: 30px;
+}
+footer{
+  /* width: 85%; */
+  display: flex;
+ /* position:absolute;
+ bottom: 0px; */
+  justify-content: space-between;
+  margin: 25px 125px;
+  padding-bottom: 30px;
+}
+
+
+
+.list-child{
+  margin-top:20px;
+}
+.div {
+  border-radius: 75px;
+  background-color: #b0daed;
+  display: flex;
+  margin-top: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: px;
+  padding: 1px 0 1px 11px;
+  height: 40px;
+}
+
+
+.div-2 {
+  
+  color: rgba(69, 90, 100, 0.6);
+  flex-grow: 1;
+  flex-basis: auto;
+  margin: auto 0;
+  font: 400 16px/194% Roboto, sans-serif;
+  background-color: transparent;
+}
+
+
+.div-3 {
+  justify-content: center;
+  border-radius: 75px;
+  background-color: #7cb7ee;
+  align-self: start;
+  color: #ebebeb;
+  white-space: nowrap;
+  text-transform: uppercase;
+  flex-grow: 1;
+  padding: 6px 21px;
+  font: 600 15px/27px Outfit, sans-serif;
+  margin-top: 0px;
+  margin-right: 0px;
+}
+
+
+/* @media (max-width: 991px) {
+  .div-3 {
+    padding-left: 20px;
+    white-space: initial;
+  }
+} */
+
+
+.emp-hire{
+  background: #F2D9D8;
+border-radius: var(--cont-radius);
+padding:var(--cont-padding)
+}
+
+.emp-paragh{
+text-align: center;
+font-weight: var(--ler-weight);
+}
+
+
+.emp-remain{
+  background: #EBFF03;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+}
+
+.emp-remain1{
+  background: #027606;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+}
+.emp-postjob{
+  color: white;
+  font-weight: var(--ler-weight);
+  background: #1C9336;
+border-radius: var(--cont-radius);
+padding: var(--cont-padding);
+}
+.emp-head{
+  font-weight: var(--ler-weight);
+  text-align: center;
+
+}
+
+.emp-tjobs{
+  background: #FBC7DD;
+border-radius: var(--cont-radius);
+padding:var(--cont-padding);
+height: 100px;
+}
+
+.emp-activejob{
+  background: #D2F9FB;
+border-radius: var(--cont-radius);
+padding:var(--cont-padding);
+height: 100px;
+}
+
+.emp-complete{
+  background: #D9FFDD;
+border-radius: var(--cont-radius);
+padding:var(--cont-padding);
+height: 100px;
+}
+
+.emp-ongoing{
+  background: #D4F8FF;
+border-radius: var(--cont-radius);
+padding:var(--cont-padding)
+}
+
+/* ongoinjobs */
+
+.emp-list{
+  background-color: white;
+  padding: var(--cont-padding);
+  border-radius: var(--cont-radius);
+  font-weight: var(--ler-weight);
+}
+.overview{
+  background: #FDF6CE;
+border-radius: var(--cont-radius);
+padding:var(--cont-padding)
+}
+
+.emp-details{
+  background: #B6FFB9;
+border-radius: var(--cont-radius);
+padding:var(--cont-padding)
+}
+
+.emp-contact{
+  background: #CDEDE7;
+border-radius: var(--cont-radius);
+padding:var(--cont-padding)
+}
+
+.emp-location{
+  background: #FCBCBC;
+border-radius: var(--cont-radius);
+padding:var(--cont-padding)
+}
+
+
+
